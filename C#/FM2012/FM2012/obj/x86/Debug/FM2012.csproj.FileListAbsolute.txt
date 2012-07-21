@@ -1,0 +1,9 @@
+C:\Users\falcon\Documents\Visual Studio 2010\Projects\FM2012\FM2012\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\falcon\Documents\Visual Studio 2010\Projects\FM2012\FM2012\obj\x86\Debug\FM2012.Form1.resources
+C:\Users\falcon\Documents\Visual Studio 2010\Projects\FM2012\FM2012\obj\x86\Debug\FM2012.Properties.Resources.resources
+C:\Users\falcon\Documents\Visual Studio 2010\Projects\FM2012\FM2012\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\falcon\Documents\Visual Studio 2010\Projects\FM2012\FM2012\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\falcon\Documents\Visual Studio 2010\Projects\FM2012\FM2012\bin\Debug\FM2012.exe
+C:\Users\falcon\Documents\Visual Studio 2010\Projects\FM2012\FM2012\bin\Debug\FM2012.pdb
+C:\Users\falcon\Documents\Visual Studio 2010\Projects\FM2012\FM2012\obj\x86\Debug\FM2012.exe
+C:\Users\falcon\Documents\Visual Studio 2010\Projects\FM2012\FM2012\obj\x86\Debug\FM2012.pdb

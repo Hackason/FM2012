@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WpfFilerApplication">
+</Property><Property Name="ソリューション ファイル" Value="C:\Users\falcon\Desktop\WpfFilerApplication\WpfFilerApplication.sln">
+</Property><Property Name="ユーザー オプション ファイル" Value="C:\Users\falcon\Desktop\WpfFilerApplication\WpfFilerApplication.suo">
+</Property><Property Name="Date" Value="2012年7月21日">
+</Property><Property Name="Time" Value="14:19">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WpfFilerApplication.sln" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication.sln としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="" Source="WpfFilerApplication.suo" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication.suo としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\WpfFilerApplication.csproj" Description="プロジェクト ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\WpfFilerApplication.csproj としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\App.xaml.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\App.xaml.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\MainWindow.xaml.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\MainWindow.xaml.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\Converters\ExplorerNodeToIconConverter.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\Converters\ExplorerNodeToIconConverter.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\Properties\AssemblyInfo.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\Properties\AssemblyInfo.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\Properties\Resources.Designer.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\Properties\Resources.Designer.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\Properties\Settings.Designer.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\Properties\Settings.Designer.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\ViewModel\ExplorerNodeViewModel.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\ViewModel\ExplorerNodeViewModel.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\ViewModel\ExplorerViewModel.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\ViewModel\ExplorerViewModel.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\Properties\Settings.settings" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\Properties\Settings.settings としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\Properties\Resources.resx" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\Properties\Resources.resx としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\Icons\File.ico" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\Icons\File.ico としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\Icons\Folder.ico" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\Icons\Folder.ico としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\Icons\DiskDrive.ico" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\Icons\DiskDrive.ico としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\App.xaml" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\App.xaml としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\MainWindow.xaml" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\WpfFilerApplication\MainWindow.xaml としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\WpfFilerApplication.csproj" Description="プロジェクトは正常に変換されました。">
+</Event><Event ErrorLevel="3" Project="WpfFilerApplication" Source="WpfFilerApplication\WpfFilerApplication.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Wankuma.Kazuki.Wpf" Source="Wankuma.Kazuki.Wpf\Wankuma.Kazuki.Wpf.csproj" Description="プロジェクト ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\Wankuma.Kazuki.Wpf\Wankuma.Kazuki.Wpf.csproj としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="Wankuma.Kazuki.Wpf" Source="Wankuma.Kazuki.Wpf\Properties\AssemblyInfo.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\Wankuma.Kazuki.Wpf\Properties\AssemblyInfo.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="Wankuma.Kazuki.Wpf" Source="Wankuma.Kazuki.Wpf\Properties\Resources.Designer.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\Wankuma.Kazuki.Wpf\Properties\Resources.Designer.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="Wankuma.Kazuki.Wpf" Source="Wankuma.Kazuki.Wpf\Properties\Settings.Designer.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\Wankuma.Kazuki.Wpf\Properties\Settings.Designer.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="Wankuma.Kazuki.Wpf" Source="Wankuma.Kazuki.Wpf\ViewModelBase.cs" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\Wankuma.Kazuki.Wpf\ViewModelBase.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="Wankuma.Kazuki.Wpf" Source="Wankuma.Kazuki.Wpf\Properties\Settings.settings" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\Wankuma.Kazuki.Wpf\Properties\Settings.settings としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="Wankuma.Kazuki.Wpf" Source="Wankuma.Kazuki.Wpf\Properties\Resources.resx" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\Wankuma.Kazuki.Wpf\Properties\Resources.resx としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="Wankuma.Kazuki.Wpf" Source="Wankuma.Kazuki.Wpf\Themes\Generic.xaml" Description="ファイルは正常に C:\Users\falcon\Desktop\WpfFilerApplication\Backup\Wankuma.Kazuki.Wpf\Themes\Generic.xaml としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="Wankuma.Kazuki.Wpf" Source="Wankuma.Kazuki.Wpf\Wankuma.Kazuki.Wpf.csproj" Description="プロジェクトは正常に変換されました。">
+</Event><Event ErrorLevel="3" Project="Wankuma.Kazuki.Wpf" Source="Wankuma.Kazuki.Wpf\Wankuma.Kazuki.Wpf.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WpfFilerApplication.sln" Description="ソリューションは正常に変換されました">
+</Event><Event ErrorLevel="3" Project="" Source="WpfFilerApplication.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WpfFilerApplication" Source="WpfFilerApplication\WpfFilerApplication.csproj" Description="スキャンが完了しました: プロジェクト ファイルにアップグレードは必要ありません。">
+</Event><Event ErrorLevel="0" Project="Wankuma.Kazuki.Wpf" Source="Wankuma.Kazuki.Wpf\Wankuma.Kazuki.Wpf.csproj" Description="スキャンが完了しました: プロジェクト ファイルにアップグレードは必要ありません。">
+</Event></UpgradeLog>

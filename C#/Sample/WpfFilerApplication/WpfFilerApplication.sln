@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfFilerApplication", "WpfFilerApplication\WpfFilerApplication.csproj", "{56F21E3F-956C-4112-BB8B-9FA41A41061C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wankuma.Kazuki.Wpf", "Wankuma.Kazuki.Wpf\Wankuma.Kazuki.Wpf.csproj", "{1F36FEB9-F8E8-4CDE-B5B9-6AE973441536}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56F21E3F-956C-4112-BB8B-9FA41A41061C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F21E3F-956C-4112-BB8B-9FA41A41061C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F21E3F-956C-4112-BB8B-9FA41A41061C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F21E3F-956C-4112-BB8B-9FA41A41061C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F36FEB9-F8E8-4CDE-B5B9-6AE973441536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F36FEB9-F8E8-4CDE-B5B9-6AE973441536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F36FEB9-F8E8-4CDE-B5B9-6AE973441536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F36FEB9-F8E8-4CDE-B5B9-6AE973441536}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

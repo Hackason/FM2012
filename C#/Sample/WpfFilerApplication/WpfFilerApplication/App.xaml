@@ -1,0 +1,35 @@
+﻿<Application x:Class="WpfFilerApplication.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:viewModel="clr-namespace:WpfFilerApplication.ViewModel"
+    xmlns:converters="clr-namespace:WpfFilerApplication.Converters"
+    Startup="Application_Startup">
+    <Application.Resources>
+        <converters:ExplorerNodeToIconConverter x:Key="iconConverter" />
+
+        <HierarchicalDataTemplate DataType="{x:Type viewModel:DriveNodeViewModel}" ItemsSource="{Binding ChildDirectories}">
+            <StackPanel Orientation="Horizontal">
+                <Image Width="16" Height="16"  Source="{Binding Converter={StaticResource iconConverter}}" />
+                <TextBlock Text="{Binding Name}" />
+            </StackPanel>
+        </HierarchicalDataTemplate>
+
+        <HierarchicalDataTemplate DataType="{x:Type viewModel:DirectoryNodeViewModel}" ItemsSource="{Binding ChildDirectories}">
+            <StackPanel Orientation="Horizontal">
+                <Image Width="16" Height="16"  Source="{Binding Converter={StaticResource iconConverter}}" />
+                <TextBlock Text="{Binding Name}" />
+            </StackPanel>
+        </HierarchicalDataTemplate>
+
+        <DataTemplate x:Key="fileNodeNameTemplate" DataType="{x:Type viewModel:FileNodeViewModel}">
+            <StackPanel Orientation="Horizontal">
+                <Image Width="16" Height="16"  Source="{Binding Converter={StaticResource iconConverter}}" />
+                <TextBlock Text="{Binding Name}" />
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="fileNodeSizeTemplate" DataType="{x:Type viewModel:FileNodeViewModel}">
+            <TextBlock Text="{Binding Size, StringFormat='{}{0:###,0} Byte'}" HorizontalAlignment="Stretch" TextAlignment="Right" />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
