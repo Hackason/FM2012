@@ -18,9 +18,18 @@ namespace FM2012
         {
             InitializeComponent();
         }
+        // ファイルのコピー元のファイル名
+        string filename = "";
+        string pass = "";
+
+        // ファイル名を格納
+        string name = "";
+
+        string dirpass = "";
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             treeView1.ImageList = imageList1;
             string[] drives = Environment.GetLogicalDrives();
 
@@ -95,6 +104,7 @@ namespace FM2012
             listView1.Clear();//これがないとファイル表示が累積
             DirectoryInfo di = new DirectoryInfo(e.Node.FullPath);
 
+            #region ＋マークによるノード展開でデフォルトのA:\アクセス回避
             if (e.Node.Text != "A:\\")//＋マークによるノード展開でデフォルトのA:\アクセス回避
             {
                 if (di.Exists)
@@ -112,25 +122,9 @@ namespace FM2012
                     }
                 }
             }
+            #endregion
 
-            //statusBarTextShow(e);//★statusBarにFullPathを表示する下記メソッド
-           StatusStripTextShow(e);
-
-        }
-
-        private void StatusStripTextShow(System.Windows.Forms.TreeViewEventArgs e)
-        {
-            //★StatusStripにフォルダ名までのFullPathを表示
-            //
-            //StatusStrip1.Text = e.Node.FullPath;とすると、
-            //Environment.GetLogicalDrives()を使うと取得ドライブ名に\マークが付き（例：C:\）、
-            //FullPathを取得すると\マークが付く（例：\WINDOWS）ので、
-            //statusBar1.TextにFullPathを入れると「C:\\WINDOWS」となってしまう。。。
-            //ちなみに、
-            //string s1 = e.Node.FullPath.Substring(0,2);
-            //string s2 = e.Node.FullPath.Substring(3,(e.Node.FullPath.Length - 3));
-            //statusBar1.Text = s1 + s2;
-            //これではドライブ初期表示に\マークが表示されない（例：C:）
+            #region ディレクトリまでのパスを取得
 
             string s1, s2;
 
@@ -147,14 +141,19 @@ namespace FM2012
             }
 
             //statusBar1.Text = s1 + s2;
-            statusStrip1.Text = s1 + s2;
+            // ディレクトリまでのパス
+            dirpass = s1 + s2;
+            statusStrip1.Text = dirpass;
+
+            #endregion
         }
+        
 
         private void listView1_Click(object sender, EventArgs e)
         {
             //statusStripにファイル名までのFullPathを表示
 
-            string s1, s2, s3;
+            string s1, s2;
 
             if (treeView1.SelectedNode.FullPath.Length <= 3)
             {
@@ -168,15 +167,72 @@ namespace FM2012
                 s2 = treeView1.SelectedNode.FullPath.Substring(4, (treeView1.SelectedNode.FullPath.Length - 4));
             }
 
-            s3 = "\\" + listView1.SelectedItems[0].Text;
+            name = "\\" + listView1.SelectedItems[0].Text;
 
-            statusStrip1.Text = s1 + s2 + s3;
+            statusStrip1.Text = s1 + s2 + name;
+            // できたら消そう
+            label1.Text = statusStrip1.Text;
 
         }
 
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
             Process.Start(statusStrip1.Text);
+        }
+
+        private void listView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                contextMenuStrip1.Show(this,e.X,e.Y);
+            }
+        }
+
+        private void コピーToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // 「コピー」を押したときのパスをあらかじめ用意した変数に格納
+            // copyorigin = statusStrip1.Text;
+
+            filename = listView1.SelectedItems[0].Text;
+
+            pass = statusStrip1.Text;
+            MessageBox.Show(pass);
+
+            #region 貼り付け表示
+
+            // 貼り付けを表示させるようにする。
+            貼り付けToolStripMenuItem.Enabled = true;
+            貼り付けToolStripMenuItem.Visible = true;
+
+            #endregion
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            /*
+            if (copyorigin == "")
+            {
+                貼り付けToolStripMenuItem.Enabled = false;
+                貼り付けToolStripMenuItem.Visible = false;
+            }
+             * */
+        }
+
+        private void 貼り付けToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string pastpass = dirpass+name;
+            System.IO.File.Copy(pass, pastpass, true);
+
+            MessageBox.Show(pastpass);
+        }
+
+        private void treeView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                contextMenuStrip1.Show(this, e.X, e.Y);
+            }
         }
 
     }
