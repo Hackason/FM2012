@@ -33,5 +33,6 @@
                 </ListView.View>
             </ListView>
         </Grid>
+        <Menu Height="23" Name="menu1" Width="200" />
     </DockPanel>
 </Window>

@@ -23,6 +23,7 @@ namespace FM2012
 
         // ファイルのコピー元のファイル名
         string filename = "";
+
         //　コピーのときに使うパス
         string pass = "";
 
@@ -31,6 +32,8 @@ namespace FM2012
 
         // ディレクトリまでのパス
         string dirpass = "";
+
+        string fullpath = "";
 
         #endregion
 
@@ -48,15 +51,19 @@ namespace FM2012
 
                 if (drive == "A:\\") //ドライブに対しImageListの画像を指定
                 {
+                    Icon ico = System.Drawing.Icon.ExtractAssociatedIcon("A:\\");
+                   /* 
                     tn.ImageIndex = 0;
                     tn.SelectedImageIndex = 0;
+                    */
+                     
                 }
                 else
                 {
                     tn.ImageIndex = 1;
                     tn.SelectedImageIndex = 1;
-                }
 
+                }
 
                 #endregion
 
@@ -95,7 +102,7 @@ namespace FM2012
                     catch (Exception exc)
                     {
                         string s = exc.Message.ToString();
-                        statusStrip1.Text = s;            //statusBarにエラーを表示
+                        MessageBox.Show(s);           //MessageBoxでエラーを表示
                     }
                 }
             }
@@ -127,6 +134,11 @@ namespace FM2012
                         {
                             listView1.Items.Add(file.Name);
                         }
+                        
+                        for (int i = 0; i < listView1.Items.Count-1; i++)
+                        {
+                            listView1.Items[i].ImageIndex = 3;
+                        }
                     }
                     catch (Exception exc)
                     {
@@ -135,6 +147,7 @@ namespace FM2012
                 }
             }
             #endregion
+
 
             #region ディレクトリまでのパスを取得
 
@@ -155,7 +168,7 @@ namespace FM2012
             //statusBar1.Text = s1 + s2;
             // ディレクトリまでのパス
             dirpass = s1 + s2;
-            statusStrip1.Text = dirpass;
+            // statusStrip1.Text = dirpass;
 
             #endregion
         }
@@ -181,7 +194,7 @@ namespace FM2012
 
             name = "\\" + listView1.SelectedItems[0].Text;
 
-            statusStrip1.Text = s1 + s2 + name;
+           fullpath = s1 + s2 + name;
 
             #endregion
         }
@@ -189,7 +202,7 @@ namespace FM2012
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
             // Windowsで関連付けられているプログラムで起動
-            Process.Start(statusStrip1.Text);
+            Process.Start(fullpath);
         }
 
         #region 右クリックでコンテキストメニューを表示
@@ -216,7 +229,7 @@ namespace FM2012
         {
             filename = listView1.SelectedItems[0].Text;
 
-            pass = statusStrip1.Text;
+            pass = fullpath;
             MessageBox.Show(pass);
 
             #region 貼り付け表示
@@ -293,11 +306,6 @@ namespace FM2012
                 CopyDirectory(dir, destDirName + System.IO.Path.GetFileName(dir));
 
             #endregion
-
-        }
-
-        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
 
         }
     }

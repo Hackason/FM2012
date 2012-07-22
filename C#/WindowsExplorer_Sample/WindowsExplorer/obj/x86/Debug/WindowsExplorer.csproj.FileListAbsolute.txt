@@ -1,0 +1,13 @@
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\bin\Debug\WindowsExplorer.exe
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\bin\Debug\WindowsExplorer.pdb
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\MainWindow.baml
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\MainWindow.g.cs
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\App.g.cs
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\WindowsExplorer_MarkupCompile.cache
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\WindowsExplorer.g.resources
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\WindowsExplorer.Properties.Resources.resources
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\WindowsExplorer.exe
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\WindowsExplorer.pdb

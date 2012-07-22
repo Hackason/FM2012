@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfFilerApplication.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WPF Filer">
+    <DockPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TreeView ItemsSource="{Binding Drives}" SelectedItemChanged="SelectedDirectoryChanged">
+                
+            </TreeView>
+            
+            <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" />
+            
+            <ListView 
+                Name="listViewFiles"
+                Grid.Column="2"
+                ItemsSource="{Binding ChildFiles}">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="名前" CellTemplate="{StaticResource fileNodeNameTemplate}" />
+                        <GridViewColumn Header="サイズ" CellTemplate="{StaticResource fileNodeSizeTemplate}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </DockPanel>
+</Window>
