@@ -1,0 +1,16 @@
+﻿<Window x:Class="TreeView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TreeView" Height="300" Width="395" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <Button Content="01.ツリービューを作成する" FontSize="14" Height="29" HorizontalContentAlignment="Left" Name="button1" Click="button1_Click" />
+        <Button Content="02.動的に項目を追加する" FontSize="14" Height="29" HorizontalContentAlignment="Left" Name="button2" Click="button2_Click" />
+        <Button Content="03.選択された項目を取得する" FontSize="14" Height="29" HorizontalContentAlignment="Left" Name="button3" Click="button3_Click" />
+        <Button Content="04.選択された項目のパスを取得する" FontSize="14" Height="29" HorizontalContentAlignment="Left" Name="button4" Click="button4_Click" />
+        <Button Content="05.選択した項目に子項目を追加する" FontSize="14" Height="29" HorizontalContentAlignment="Left" Name="button5" Click="button5_Click" />
+        <Button Content="06.選択された項目を削除する" FontSize="14" Height="29" HorizontalContentAlignment="Left" Name="button6" Click="button6_Click" />
+        <Button Content="07.項目を展開する" FontSize="14" Height="29" HorizontalContentAlignment="Left" Name="button7" Click="button7_Click" />
+        <Button Content="08.項目に画像とテキストを表示する" FontSize="14" Height="29" HorizontalContentAlignment="Left" Name="button8" Click="button8_Click" />
+        <Button Content="09.項目にチェックボックスやラジオボタンを表示する" FontSize="14" Height="29" HorizontalContentAlignment="Left" Name="button9" Click="button9_Click" />
+    </StackPanel>
+</Window>

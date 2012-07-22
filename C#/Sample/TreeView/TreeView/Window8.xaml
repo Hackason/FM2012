@@ -1,0 +1,29 @@
+﻿<Window x:Class="TreeView.Window8"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="08.項目に画像とテキストを表示する" Height="230" Width="400" WindowStartupLocation="CenterScreen">
+    <DockPanel Name="DockPanel1" LastChildFill="True">
+        <TreeView Name="TreeView1" DockPanel.Dock="Top">
+            <TreeViewItem Header="Flower" Name="TreeViewItem1" IsExpanded="True">
+                <!-- コードから項目を追加するにはコメントにする ここから -->
+                <TreeViewItem IsExpanded="True">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Images/Chrysanthemum.jpg" Width="102" Height="76" Margin="2" />
+                            <TextBlock Text="菊" FontSize="32" Height="76" />
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem IsExpanded="True">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Images/Tulips.jpg" Width="102" Height="76" Margin="2"/>
+                            <TextBlock Text="チューリップ" FontSize="32" Height="76" />
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <!-- コードから項目を追加するにはコメントにする ここまで -->
+            </TreeViewItem>
+        </TreeView>
+    </DockPanel>
+</Window>

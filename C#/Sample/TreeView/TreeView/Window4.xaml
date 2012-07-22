@@ -1,0 +1,21 @@
+﻿<Window x:Class="TreeView.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="04.選択された項目のパスを取得する" Height="220" Width="300" WindowStartupLocation="CenterScreen">
+    <DockPanel Name="DockPanel1" LastChildFill="True">
+        <TextBlock Name="TextBlock1" Margin="3" DockPanel.Dock="Bottom"/>
+        <TreeView Name="TreeView1" DockPanel.Dock="Top" SelectedItemChanged="TreeView1_SelectedItemChanged">
+            <TreeViewItem Header="親1" Name="TreeViewItem1">
+                <TreeViewItem Header="子1" />
+                <TreeViewItem Header="子2">
+                    <TreeViewItem Header="孫1">
+                        <TreeViewItem Header="曾孫1" />
+                        <TreeViewItem Header="曾孫2" />
+                        <TreeViewItem Header="曾孫3" />
+                    </TreeViewItem>
+                    <TreeViewItem Header="孫2" />
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+    </DockPanel>
+</Window>

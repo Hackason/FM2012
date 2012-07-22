@@ -1,0 +1,19 @@
+﻿<Window x:Class="TreeView.Window9"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="09.項目にチェックボックスやラジオボタンを表示する" Height="200" Width="300" WindowStartupLocation="CenterScreen">
+    <DockPanel Name="DockPanel1" LastChildFill="True">
+        <TreeView Name="TreeView1" DockPanel.Dock="Top">
+            <TreeViewItem Header="RadioButton" IsExpanded="True">
+                <RadioButton Content="項目1" />
+                <RadioButton Content="項目2" />
+                <RadioButton Content="項目3" />
+            </TreeViewItem>
+            <TreeViewItem Header="CheckBox" IsExpanded="True">
+                <CheckBox Content="項目1" />
+                <CheckBox Content="項目2" />
+                <CheckBox Content="項目3" />
+            </TreeViewItem>
+        </TreeView>
+    </DockPanel>
+</Window>

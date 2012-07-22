@@ -1,0 +1,25 @@
+﻿<Window x:Class="TreeView.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="01.ツリービューを作成する" Height="300" Width="300" WindowStartupLocation="CenterScreen" Initialized="Window_Initialized">
+    <DockPanel Name="DockPanel1">
+        <TreeView>
+            <TreeViewItem Header="親1">
+                <TreeViewItem Header="子1" />
+                <TreeViewItem Header="子2">
+                    <TreeViewItem Header="孫1" />
+                    <TreeViewItem Header="孫2" />
+                </TreeViewItem>
+                <TreeViewItem Header="子3">
+                    <TreeViewItem Header="孫1" />
+                    <TreeViewItem Header="孫2" />
+                    <TreeViewItem Header="孫3" />
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="親2">
+                <TreeViewItem Header="子1" />
+                <TreeViewItem Header="子2" />                
+            </TreeViewItem>
+        </TreeView>
+    </DockPanel>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="TreeView.Window7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="07.項目を展開する" Height="220" Width="300" WindowStartupLocation="CenterScreen">
+    <DockPanel Name="DockPanel1" LastChildFill="True">
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="3">
+            <TextBlock Width="200" Text="選択項目名：" Name="TextBlock1" />
+            <Button Name="btnExpand" Width="70" Content="展開する" Click="btnExpand_Click" />
+        </StackPanel>
+        <TreeView Name="TreeView1" DockPanel.Dock="Top" SelectedItemChanged="TreeView1_SelectedItemChanged">
+            <TreeViewItem Header="親1" Name="TreeViewItem1" IsExpanded="True">
+                <TreeViewItem Header="子1" />
+                <TreeViewItem Header="子2" IsExpanded="True">
+                    <TreeViewItem Header="孫1">
+                        <TreeViewItem Header="曾孫1" />
+                        <TreeViewItem Header="曾孫2" />
+                        <TreeViewItem Header="曾孫3" />
+                    </TreeViewItem>
+                    <TreeViewItem Header="孫2" />
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+    </DockPanel>
+</Window>

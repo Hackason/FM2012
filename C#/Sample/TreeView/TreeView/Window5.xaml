@@ -1,0 +1,19 @@
+﻿<Window x:Class="TreeView.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="05.選択した項目に子項目を追加する" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+    <DockPanel Name="DockPanel1" LastChildFill="True">
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="3">
+            <TextBlock Text="追加項目名：" Name="TextBlock1" />
+            <TextBox Width="150" Name="TextBox1" />
+            <Button Name="btnAdd" Content="追加" Click="btnAdd_Click" />
+        </StackPanel>
+        <TreeView Name="TreeView1" DockPanel.Dock="Top">
+            <TreeViewItem Header="親1" Name="TreeViewItem1">
+                <TreeViewItem Header="子1" />
+                <TreeViewItem Header="子2" />
+                <TreeViewItem Header="子3" />
+            </TreeViewItem>
+        </TreeView>
+    </DockPanel>
+</Window>
