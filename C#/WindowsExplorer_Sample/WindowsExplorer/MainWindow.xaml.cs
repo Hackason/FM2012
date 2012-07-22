@@ -23,5 +23,40 @@ namespace WindowsExplorer
         {
             InitializeComponent();
         }
+
+        #region ボタンクリック関係
+
+        // 「整理」のボタンをクリック
+        private void textBlock1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("ファイルを整理します");
+        }
+
+        // 「開く」のボタンをクリック
+        private void textBlock2_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("ファイルを開く");
+        }
+
+        // 「印刷ボタン」
+        private void textBlock3_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("ファイルを印刷");
+        }
+
+        // 「書き込む」ボタン
+        private void textBlock4_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("ファイルを書き込む");
+        }
+
+        // 「新しいフォルダーを作成」ボタン
+        private void textBlock5_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("新しいフォルダーを作成");
+        }
+
+        #endregion
+
     }
 }

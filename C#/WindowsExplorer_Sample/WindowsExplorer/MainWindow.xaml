@@ -50,11 +50,11 @@
                         <GradientStop Color="#FFE6F0FA" Offset="0.496" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock Name="textBlock1" Text="整理" />
-                <TextBlock Name="textBlock2" Text="開く" />
-                <TextBlock Name="textBlock3" Text="印刷" />
-                <TextBlock Name="textBlock4" Text="書き込む" />
-                <TextBlock Name="textBlock5" Text="新しいフォルダー" />
+                <TextBlock Name="textBlock1" Text="整理" MouseDown="textBlock1_MouseDown" />
+                <TextBlock Name="textBlock2" Text="開く" MouseDown="textBlock2_MouseDown" />
+                <TextBlock Name="textBlock3" Text="印刷" MouseDown="textBlock3_MouseDown" />
+                <TextBlock Name="textBlock4" Text="書き込む" MouseDown="textBlock4_MouseDown" />
+                <TextBlock Name="textBlock5" Text="新しいフォルダー" MouseDown="textBlock5_MouseDown" />
             </StackPanel>
         </Border>
         <Grid Grid.Row="1" Name="grid1">

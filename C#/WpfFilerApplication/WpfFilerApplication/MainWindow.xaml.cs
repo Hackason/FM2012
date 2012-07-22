@@ -12,6 +12,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using System.IO;
+using System.Diagnostics;
+
 
 
 namespace WpfFilerApplication
@@ -33,7 +36,18 @@ namespace WpfFilerApplication
 
         private void listViewFiles_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-           
+           // ダブルクリックしたとき
+            
+        }
+
+        private void listViewFiles_ContextMenuOpening(object sender, ContextMenuEventArgs e)
+        {
+           // コンテキストメニューを開いたとき
+        }
+
+        private void listViewFiles_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            // クリックしたとき
         }
     }
 }

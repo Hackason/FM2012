@@ -235,8 +235,8 @@ namespace FM2012
             #region 貼り付け表示
 
             // 貼り付けを表示させるようにする。
-            貼り付けToolStripMenuItem.Enabled = true;
-            貼り付けToolStripMenuItem.Visible = true;
+            貼り付けToolStripMenuItem.Enabled = false;
+            貼り付けToolStripMenuItem.Visible = false;
 
             #endregion
         }
@@ -266,6 +266,9 @@ namespace FM2012
 
             // ファイル単体でのコピーは成功
             System.IO.File.Copy(pass, pastpass, true);
+
+            貼り付けToolStripMenuItem.Enabled = false;
+            貼り付けToolStripMenuItem.Visible = false;
         }
 
         public static void CopyDirectory(string sourceDirName, string destDirName)

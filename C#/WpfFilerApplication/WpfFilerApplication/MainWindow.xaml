@@ -3,6 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="WPF Filer">
     <DockPanel>
+        
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="250" />
@@ -18,7 +19,7 @@
             <ListView 
                 Name="listViewFiles"
                 Grid.Column="2"
-                ItemsSource="{Binding ChildFiles}" >
+                ItemsSource="{Binding ChildFiles}" ContextMenuOpening="listViewFiles_ContextMenuOpening" MouseDown="listViewFiles_MouseDown">
                 
                 <ListView.ItemContainerStyle>
                     <Style TargetType="{x:Type ListViewItem}">
