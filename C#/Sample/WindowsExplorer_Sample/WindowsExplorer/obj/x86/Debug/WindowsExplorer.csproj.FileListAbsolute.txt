@@ -11,3 +11,5 @@ C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86
 C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\WindowsExplorer.exe
 C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\WindowsExplorer.pdb
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\WindowsExplorer_MarkupCompile.lref
+C:\Users\falcon\Desktop\FM2012\C#\WindowsExplorer_Sample\WindowsExplorer\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
